@@ -1,0 +1,13 @@
+name: chapter01
+version: 0.1.0
+
+authors:
+  - yoshiyuki-tsuchida <yoshiyuki_tsuchida@voyagegroup.com>
+
+targets:
+  chapter01:
+    main: src/chapter01.cr
+
+crystal: 0.23.1
+
+license: MIT
