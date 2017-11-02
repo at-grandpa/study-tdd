@@ -1,0 +1,13 @@
+name: part01
+version: 0.1.0
+
+authors:
+  - at-grandpa <yoshiyuki.tsuchida.k@gmail.com>
+
+targets:
+  part01:
+    main: src/money.cr
+
+crystal: 0.23.1
+
+license: MIT
