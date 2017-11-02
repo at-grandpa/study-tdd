@@ -1,6 +1,6 @@
-require "../spec_helper"
+require "./spec_helper"
 
-describe Chapter01::Money do
+describe Money do
   describe "multiplication" do
     it "$5 * 2 = 10 になること" do
       five = Dollar.new(5)
