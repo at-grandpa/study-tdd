@@ -1,6 +1,8 @@
 module Money
   class Dollar
-    def initialize(amount)
+    property amount
+
+    def initialize(@amount)
     end
 
     def times(multiplier)
