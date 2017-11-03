@@ -7,6 +7,7 @@ module Money
 
     def times(multiplier : Int32)
       @amount *= multiplier
+      nil
     end
   end
 end
