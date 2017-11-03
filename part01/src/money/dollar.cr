@@ -5,6 +5,7 @@ module Money
     def initialize(@amount : Int32)
     end
 
+    # chapter03
     def times(multiplier : Int32)
       @amount *= multiplier
     end
