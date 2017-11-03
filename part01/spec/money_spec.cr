@@ -1,7 +1,7 @@
 require "./spec_helper"
 
 describe Money do
-  describe "multiplication" do
+  describe "testMultiplication()" do
     it "掛け算を計算できること" do
       five = Money::Dollar.new(5)
       product = five.times(2)
