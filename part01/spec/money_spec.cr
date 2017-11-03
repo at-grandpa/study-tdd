@@ -10,4 +10,9 @@ describe Money do
       product.amount.should eq 15
     end
   end
+  describe "testEquality()" do
+    it "$5は他の$5と等価であること" do
+      Money::Dollar.new(5).equals.should eq Money::Dollar.new(5)
+    end
+  end
 end
