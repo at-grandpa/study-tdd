@@ -10,4 +10,10 @@ describe Money do
       product.amount.should eq 15
     end
   end
+  describe "testEquality()" do
+    it "正しく等価性比較ができること" do
+      Money::Dollar.new(5).equals(Money::Dollar.new(5)).should be_true
+      Money::Dollar.new(5).equals(Money::Dollar.new(6)).should be_false
+    end
+  end
 end

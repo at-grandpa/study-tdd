@@ -8,5 +8,9 @@ module Money
     def times(multiplier : Int32)
       Dollar.new(@amount * multiplier)
     end
+
+    def equals(other : self)
+      @amount == other.amount
+    end
   end
 end
