@@ -9,8 +9,8 @@ module Money
       Dollar.new(@amount * multiplier)
     end
 
-    def equals(object : self)
-      true
+    def equals(other : self)
+      @amount == other.amount
     end
   end
 end
