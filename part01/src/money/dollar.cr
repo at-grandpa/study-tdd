@@ -9,6 +9,7 @@ module Money
       Dollar.new(@amount * multiplier)
     end
 
+    # chapter04
     def equals(other : self)
       @amount == other.amount
     end
