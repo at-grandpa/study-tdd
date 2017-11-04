@@ -5,6 +5,8 @@
 
 ## 各章のメモ
 
+* [まえがき](https://github.com/at-grandpa/study-tdd/issues/2)
+* [はじめに](https://github.com/at-grandpa/study-tdd/issues/3)
 * 第Ⅰ部 多国籍通貨
   * [第01章 仮実装](https://github.com/at-grandpa/study-tdd/pull/5)
   * [第02章 明白な実装](https://github.com/at-grandpa/study-tdd/pull/6)
