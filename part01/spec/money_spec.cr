@@ -13,6 +13,7 @@ describe Money do
   describe "testEquality()" do
     it "$5は他の$5と等価であること" do
       Money::Dollar.new(5).equals(Money::Dollar.new(5)).should be_true
+      Money::Dollar.new(5).equals(Money::Dollar.new(6)).should be_false
     end
   end
 end
