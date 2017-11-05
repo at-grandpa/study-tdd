@@ -7,7 +7,6 @@ module Money
       Franc.new(@amount * multiplier)
     end
 
-    # ch06
     def_equals @amount
   end
 end
