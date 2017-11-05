@@ -1,9 +1,12 @@
 module MoneyPackage
-  class Money
+  abstract class Money
     def ==(other : MoneyPackage::Money)
       (@amount == other.@amount) && (other.class == self.class)
     end
-    def self.dollar(amount : Int32)
+
+    abstract def times(multiplier : Int32)
+
+    def self.dollar(amount : Int32) : self
       MoneyPackage::Dollar.new(amount)
     end
   end
