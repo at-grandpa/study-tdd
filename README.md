@@ -12,3 +12,4 @@
   * [第02章 明白な実装](https://github.com/at-grandpa/study-tdd/pull/6)
   * [第03章 三角測量](https://github.com/at-grandpa/study-tdd/pull/7)
   * [第04章 意図を語るテスト](https://github.com/at-grandpa/study-tdd/pull/8)
+  * [第05章 原則をあえて破るとき](https://github.com/at-grandpa/study-tdd/pull/9)
