@@ -1,5 +1,5 @@
 module MoneyPackage
-  class Franc
+  class Franc < MoneyPackage::Money
     def initialize(@amount : Int32)
     end
 
