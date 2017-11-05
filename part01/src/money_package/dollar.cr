@@ -6,7 +6,5 @@ module MoneyPackage
     def times(multiplier : Int32)
       Dollar.new(@amount * multiplier)
     end
-
-    def_equals @amount
   end
 end
