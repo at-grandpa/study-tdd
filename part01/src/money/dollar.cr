@@ -1,7 +1,5 @@
 module Money
   class Dollar
-    property amount : Int32
-
     def initialize(@amount : Int32)
     end
 
