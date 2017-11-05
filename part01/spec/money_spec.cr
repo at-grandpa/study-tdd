@@ -14,6 +14,7 @@ describe MoneyPackage do
       (MoneyPackage::Dollar.new(5) == MoneyPackage::Dollar.new(6)).should be_false
       (MoneyPackage::Franc.new(5) == MoneyPackage::Franc.new(5)).should be_true
       (MoneyPackage::Franc.new(5) == MoneyPackage::Franc.new(6)).should be_false
+      (MoneyPackage::Franc.new(5) == MoneyPackage::Dollar.new(5)).should be_false
     end
   end
   describe "testFrancMultiplication()" do
