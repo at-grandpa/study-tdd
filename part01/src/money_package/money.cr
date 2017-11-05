@@ -1,5 +1,7 @@
 module MoneyPackage
   class Money
-    def_equals @amount
+    def ==(other : MoneyPackage::Money)
+      @amount == other.@amount
+    end
   end
 end
