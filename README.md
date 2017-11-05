@@ -13,3 +13,4 @@
   * [第03章 三角測量](https://github.com/at-grandpa/study-tdd/pull/7)
   * [第04章 意図を語るテスト](https://github.com/at-grandpa/study-tdd/pull/8)
   * [第05章 原則をあえて破るとき](https://github.com/at-grandpa/study-tdd/pull/9)
+  * [第06章 テスト不足に気づいたら](https://github.com/at-grandpa/study-tdd/pull/10)

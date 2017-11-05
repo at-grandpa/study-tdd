@@ -1,2 +1,2 @@
 require "spec"
-require "../src/money"
+require "../src/money_package"
