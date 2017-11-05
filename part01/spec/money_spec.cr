@@ -3,7 +3,7 @@ require "./spec_helper"
 describe MoneyPackage do
   describe "testMultiplication()" do
     it "掛け算を計算できること" do
-      five = MoneyPackage::Dollar.new(5)
+      five = MoneyPackage::Money.dollar(5)
       five.times(2).should eq MoneyPackage::Dollar.new(10)
       five.times(3).should eq MoneyPackage::Dollar.new(15)
     end
