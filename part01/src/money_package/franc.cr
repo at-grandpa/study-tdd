@@ -1,4 +1,4 @@
-module Money
+module MoneyPackage
   class Franc
     def initialize(@amount : Int32)
     end
