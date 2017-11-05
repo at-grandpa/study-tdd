@@ -5,8 +5,7 @@ describe Money do
     it "掛け算を計算できること" do
       five = Money::Dollar.new(5)
       five.times(2).should eq Money::Dollar.new(10)
-      product = five.times(3)
-      product.amount.should eq 15
+      five.times(3).should eq Money::Dollar.new(15)
     end
   end
   describe "testEquality()" do
