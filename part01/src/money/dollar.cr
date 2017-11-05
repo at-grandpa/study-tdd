@@ -12,5 +12,7 @@ module Money
     def equals(other : self)
       @amount == other.amount
     end
+
+    def_equals @amount
   end
 end
