@@ -3,7 +3,6 @@ module Money
     def initialize(@amount : Int32)
     end
 
-    # ch05
     def times(multiplier : Int32)
       Dollar.new(@amount * multiplier)
     end
