@@ -5,6 +5,7 @@ module MoneyPackage
     end
 
     abstract def times(multiplier : Int32)
+    abstract def currency
 
     def self.dollar(amount : Int32) : self
       MoneyPackage::Dollar.new(amount)

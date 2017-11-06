@@ -6,5 +6,9 @@ module MoneyPackage
     def times(multiplier : Int32)
       Franc.new(@amount * multiplier)
     end
+
+    def currency
+      "CHF"
+    end
   end
 end
