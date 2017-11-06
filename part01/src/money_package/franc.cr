@@ -1,6 +1,7 @@
 module MoneyPackage
   class Franc < MoneyPackage::Money
     def initialize(@amount : Int32)
+      @currency = "CHF"
     end
 
     def times(multiplier : Int32)
@@ -8,7 +9,7 @@ module MoneyPackage
     end
 
     def currency
-      "CHF"
+      @currency
     end
   end
 end
