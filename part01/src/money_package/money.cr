@@ -15,7 +15,7 @@ module MoneyPackage
     end
 
     def self.franc(amount : Int32) : self
-      MoneyPackage::Franc.new(amount)
+      MoneyPackage::Franc.new(amount, "")
     end
   end
 end
