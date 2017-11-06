@@ -10,6 +10,7 @@ module MoneyPackage
       MoneyPackage::Dollar.new(amount)
     end
 
+    # ch09
     def self.franc(amount : Int32) : self
       MoneyPackage::Franc.new(amount)
     end
