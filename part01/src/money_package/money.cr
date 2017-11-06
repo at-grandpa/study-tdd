@@ -1,5 +1,8 @@
 module MoneyPackage
   abstract class Money
+    def initialize(@amount : Int32, @currency : String)
+    end
+
     def currency
       @currency
     end
