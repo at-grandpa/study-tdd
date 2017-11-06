@@ -15,3 +15,4 @@
   * [第05章 原則をあえて破るとき](https://github.com/at-grandpa/study-tdd/pull/9)
   * [第06章 テスト不足に気づいたら](https://github.com/at-grandpa/study-tdd/pull/10)
   * [第07章 疑念をテストに翻訳する](https://github.com/at-grandpa/study-tdd/pull/11)
+  * [第08章 実装を隠す](https://github.com/at-grandpa/study-tdd/pull/12)
