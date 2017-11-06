@@ -24,4 +24,10 @@ describe MoneyPackage do
       five.times(3).should eq MoneyPackage::Money.franc(15)
     end
   end
+  describe "testCurrency()" do
+    it "何の通貨なのかを表現できること" do
+      MoneyPackage::Money.dollar(1).currency.should eq "USD"
+      MoneyPackage::Money.franc(1).currency.should eq "CHF"
+    end
+  end
 end
