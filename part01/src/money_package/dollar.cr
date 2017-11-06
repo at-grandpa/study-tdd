@@ -1,11 +1,10 @@
 module MoneyPackage
   class Dollar < MoneyPackage::Money
-    def initialize(@amount : Int32)
-      @currency = "USD"
+    def initialize(@amount : Int32, @currency : String)
     end
 
     def times(multiplier : Int32)
-      Dollar.new(@amount * multiplier)
+      Money.dollar(@amount * multiplier)
     end
   end
 end

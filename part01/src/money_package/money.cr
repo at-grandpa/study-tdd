@@ -11,7 +11,7 @@ module MoneyPackage
     abstract def times(multiplier : Int32)
 
     def self.dollar(amount : Int32) : self
-      MoneyPackage::Dollar.new(amount)
+      MoneyPackage::Dollar.new(amount, "USD")
     end
 
     def self.franc(amount : Int32) : self
