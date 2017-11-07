@@ -5,7 +5,7 @@ module MoneyPackage
     end
 
     def times(multiplier : Int32)
-      MoneyPackage::Franc.new(@amount * multiplier, @currency)
+      MoneyPackage::Franc.new(@amount * multiplier, "hoge")
     end
   end
 end
