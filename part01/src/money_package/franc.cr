@@ -4,6 +4,7 @@ module MoneyPackage
       super(@amount, @currency)
     end
 
+    # ch10
     def times(multiplier : Int32)
       Money.franc(@amount * multiplier)
     end
