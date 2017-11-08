@@ -30,4 +30,9 @@ describe MoneyPackage do
       MoneyPackage::Money.franc(1).currency.should eq "CHF"
     end
   end
+  describe "testDifferentClassEquality()" do
+    it "クラスが違っても通貨で等価比較できること" do
+      (MoneyPackage::Money.new(10, "CHF") == MoneyPackage::Franc.new(10, "CHF")).should be_true
+    end
+  end
 end
