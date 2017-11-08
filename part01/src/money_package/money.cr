@@ -7,20 +7,20 @@ module MoneyPackage
       @currency
     end
 
-    def ==(other : MoneyPackage::Money)
+    def ==(other : self) : Bool
       (@amount == other.@amount) && (other.currency == self.currency)
     end
 
-    def times(multiplier : Int32)
-      MoneyPackage::Money.new(@amount * multiplier, @currency)
+    def times(multiplier : Int32) : self
+      Money.new(@amount * multiplier, @currency)
     end
 
     def self.dollar(amount : Int32) : self
-      MoneyPackage::Money.new(amount, "USD")
+      Money.new(amount, "USD")
     end
 
     def self.franc(amount : Int32) : self
-      MoneyPackage::Money.new(amount, "CHF")
+      Money.new(amount, "CHF")
     end
   end
 end
