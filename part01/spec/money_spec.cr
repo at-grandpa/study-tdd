@@ -12,8 +12,6 @@ describe MoneyPackage do
     it "正しく等価性比較ができること" do
       (MoneyPackage::Money.dollar(5) == MoneyPackage::Money.dollar(5)).should be_true
       (MoneyPackage::Money.dollar(5) == MoneyPackage::Money.dollar(6)).should be_false
-      (MoneyPackage::Money.franc(5) == MoneyPackage::Money.franc(5)).should be_true
-      (MoneyPackage::Money.franc(5) == MoneyPackage::Money.franc(6)).should be_false
       (MoneyPackage::Money.franc(5) == MoneyPackage::Money.dollar(5)).should be_false
     end
   end
