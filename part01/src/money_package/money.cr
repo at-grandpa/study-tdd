@@ -8,7 +8,7 @@ module MoneyPackage
     end
 
     def ==(other : MoneyPackage::Money)
-      (@amount == other.@amount) && (other.class == self.class)
+      (@amount == other.@amount) && (other.currency == self.currency)
     end
 
     def times(multiplier : Int32)
