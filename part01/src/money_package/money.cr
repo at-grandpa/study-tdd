@@ -12,7 +12,7 @@ module MoneyPackage
     end
 
     def times(multiplier : Int32)
-      nil
+      MoneyPackage::Money.new(@amount * multiplier, @currency)
     end
 
     def self.dollar(amount : Int32) : self
