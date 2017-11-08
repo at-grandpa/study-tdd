@@ -15,6 +15,10 @@ module MoneyPackage
       Money.new(@amount * multiplier, @currency)
     end
 
+    def plus(addend : self) : self
+      Money.new(@amount + addend.@amount, @currency)
+    end
+
     def self.dollar(amount : Int32) : self
       Money.new(amount, "USD")
     end
