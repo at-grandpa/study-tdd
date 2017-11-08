@@ -22,5 +22,9 @@ module MoneyPackage
     def self.franc(amount : Int32) : self
       MoneyPackage::Franc.new(amount, "CHF")
     end
+
+    def to_s
+      "#{@amount} #{@currency}"
+    end
   end
 end
