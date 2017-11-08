@@ -23,4 +23,10 @@ describe MoneyPackage do
       Money.franc(1).currency.should eq "CHF"
     end
   end
+  describe "testSimpleAddition()" do
+    it "足し算を計算できること" do
+      sum = Money.dollar(5).plus(Money.dollar(5))
+      sum.should eq Money.dollar(10)
+    end
+  end
 end
