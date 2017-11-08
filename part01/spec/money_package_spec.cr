@@ -17,6 +17,7 @@ describe MoneyPackage do
       (Money.franc(5) == Money.dollar(5)).should be_false
     end
   end
+  # ch12
   describe "testCurrency()" do
     it "何の通貨なのかを表現できること" do
       Money.dollar(1).currency.should eq "USD"
