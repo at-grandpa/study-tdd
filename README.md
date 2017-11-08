@@ -17,3 +17,4 @@
   * [第07章 疑念をテストに翻訳する](https://github.com/at-grandpa/study-tdd/pull/11)
   * [第08章 実装を隠す](https://github.com/at-grandpa/study-tdd/pull/12)
   * [第09章 歩幅の調整](https://github.com/at-grandpa/study-tdd/pull/13)
+  * [第10章 テストに聞いてみる](https://github.com/at-grandpa/study-tdd/pull/14)

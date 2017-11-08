@@ -1,5 +1,5 @@
 module MoneyPackage
-  abstract class Money
+  class Money
     def initialize(@amount : Int32, @currency : String)
     end
 
@@ -8,10 +8,12 @@ module MoneyPackage
     end
 
     def ==(other : MoneyPackage::Money)
-      (@amount == other.@amount) && (other.class == self.class)
+      (@amount == other.@amount) && (other.currency == self.currency)
     end
 
-    abstract def times(multiplier : Int32)
+    def times(multiplier : Int32)
+      MoneyPackage::Money.new(@amount * multiplier, @currency)
+    end
 
     def self.dollar(amount : Int32) : self
       MoneyPackage::Dollar.new(amount, "USD")
