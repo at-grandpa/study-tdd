@@ -15,13 +15,6 @@ describe MoneyPackage do
       (MoneyPackage::Money.franc(5) == MoneyPackage::Money.dollar(5)).should be_false
     end
   end
-  describe "testFrancMultiplication()" do
-    it "掛け算を計算できること" do
-      five = MoneyPackage::Money.franc(5)
-      five.times(2).should eq MoneyPackage::Money.franc(10)
-      five.times(3).should eq MoneyPackage::Money.franc(15)
-    end
-  end
   describe "testCurrency()" do
     it "何の通貨なのかを表現できること" do
       MoneyPackage::Money.dollar(1).currency.should eq "USD"
