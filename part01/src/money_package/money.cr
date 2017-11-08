@@ -16,11 +16,11 @@ module MoneyPackage
     end
 
     def self.dollar(amount : Int32) : self
-      MoneyPackage::Dollar.new(amount, "USD")
+      MoneyPackage::Money.new(amount, "USD")
     end
 
     def self.franc(amount : Int32) : self
-      MoneyPackage::Franc.new(amount, "CHF")
+      MoneyPackage::Money.new(amount, "CHF")
     end
   end
 end
