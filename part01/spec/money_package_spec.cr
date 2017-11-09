@@ -26,7 +26,8 @@ describe MoneyPackage do
   describe "testSimpleAddition()" do
     it "足し算を計算できること" do
       sum = Money.dollar(5).plus(Money.dollar(5))
-      sum.should eq Money.dollar(10)
+      reduced = bank.reduce(sum, "USD")
+      reduced.should eq Money.dollar(10)
     end
   end
 end
