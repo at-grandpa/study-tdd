@@ -41,4 +41,12 @@ describe MoneyPackage do
       sum.addend.should eq five
     end
   end
+  describe "testReduceSum()" do
+    it "reduceメソッドのテスト" do
+      sum : Expression = Sum.new(Money.dollar(3), Money.dollar(4))
+      bank = Bank.new
+      result = bank.reduce(sum, "USD")
+      result.should eq Money.dollar(7)
+    end
+  end
 end
