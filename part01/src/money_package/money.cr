@@ -1,5 +1,9 @@
+require "./expression"
+
 module MoneyPackage
   class Money
+    include Expression
+
     def initialize(@amount : Int32, @currency : String)
     end
 
