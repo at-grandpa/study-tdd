@@ -15,7 +15,7 @@ module MoneyPackage
       Money.new(@amount * multiplier, @currency)
     end
 
-    def plus(addend : self) : self
+    def plus(addend : self) : Expression
       Money.new(@amount + addend.@amount, @currency)
     end
 
