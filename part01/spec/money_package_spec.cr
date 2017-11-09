@@ -32,4 +32,13 @@ describe MoneyPackage do
       reduced.should eq Money.dollar(10)
     end
   end
+  describe "testPlusReturnsSum()" do
+    it "pulsメソッドはSumクラスを返すこと" do
+      five = Money.dollar(5)
+      result : Expression = five.plus(five)
+      sum : Sum = result.as(Sum)
+      sum.augend.should eq five
+      sum.addend.should eq five
+    end
+  end
 end
