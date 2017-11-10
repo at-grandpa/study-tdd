@@ -7,31 +7,33 @@ module MoneyPackage
     def initialize(@amount : Int32, @currency : String)
     end
 
-    def currency
-      @currency
-    end
-
-    def ==(other : self) : Bool
-      (@amount == other.@amount) && (other.currency == self.currency)
-    end
-
-    def times(multiplier : Int32) : self
+    def times(multiplier : Int32) : Money
       Money.new(@amount * multiplier, @currency)
     end
 
-    def plus(addend : self) : Expression
+    def plus(addend : Money) : Expression
       Sum.new(self, addend)
     end
 
-    def reduce(to : String) : self
-      self
+    def reduce(bank : Bank, to : String) : Money
+      rate : Int32 = bank.rate(@currency, to)
+      Money.new(@amount / rate, to)
     end
 
-    def self.dollar(amount : Int32) : self
+    def currency : String
+      @currency
+    end
+
+    def ==(object : Object) : Bool
+      money : Money = object.as(Money)
+      (@amount == money.@amount) && (money.currency == currency)
+    end
+
+    def self.dollar(amount : Int32) : Money
       Money.new(amount, "USD")
     end
 
-    def self.franc(amount : Int32) : self
+    def self.franc(amount : Int32) : Money
       Money.new(amount, "CHF")
     end
   end
