@@ -9,6 +9,7 @@ module MoneyPackage
       source.reduce(self, to)
     end
 
+    # ch15
     def addRate(from : String, to : String, rate : Int32) : Void
       @rates[Pair.new(from, to)] = rate
     end
