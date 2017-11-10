@@ -49,4 +49,11 @@ describe MoneyPackage do
       result.should eq Money.dollar(7)
     end
   end
+  describe "testReduceMoney()" do
+    it "BankのreduceメソッドにMoneyを渡した場合は" do
+      bank = Bank.new
+      result = bank.reduce(Money.dollar(1), "USD")
+      result.should eq Money.dollar(1)
+    end
+  end
 end
