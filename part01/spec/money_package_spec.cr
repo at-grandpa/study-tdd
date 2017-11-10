@@ -64,4 +64,9 @@ describe MoneyPackage do
       result.should eq Money.dollar(1)
     end
   end
+  describe "testIdentityRate()" do
+    it "同一通貨の場合はrateとして１を返すこと" do
+      Bank.new.rate("USD", "USD").should eq 1
+    end
+  end
 end
