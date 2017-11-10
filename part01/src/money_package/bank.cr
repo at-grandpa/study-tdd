@@ -14,6 +14,7 @@ module MoneyPackage
     end
 
     def rate(from : String, to : String) : Int32
+      return 1 if from == to
       @rates[Pair.new(from, to)]
     end
   end
