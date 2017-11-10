@@ -44,14 +44,14 @@ describe MoneyPackage do
   describe "testReduceSum()" do
     it "Sumをreduceに渡すと足されて換算されること" do
       sum : Expression = Sum.new(Money.dollar(3), Money.dollar(4))
-      bank = Bank.new
+      bank : Bank = Bank.new
       result : Money = bank.reduce(sum, "USD")
       result.should eq Money.dollar(7)
     end
   end
   describe "testReduceMoney()" do
     it "BankのreduceメソッドにMoneyを渡した場合い指定通貨に換算できること" do
-      bank = Bank.new
+      bank : Bank = Bank.new
       result : Money = bank.reduce(Money.dollar(1), "USD")
       result.should eq Money.dollar(1)
     end
