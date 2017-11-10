@@ -5,7 +5,7 @@ include MoneyPackage
 describe MoneyPackage do
   describe "testMultiplication()" do
     it "掛け算を計算できること" do
-      five = Money.dollar(5)
+      five : Money = Money.dollar(5)
       five.times(2).should eq Money.dollar(10)
       five.times(3).should eq Money.dollar(15)
     end
@@ -25,10 +25,10 @@ describe MoneyPackage do
   end
   describe "testSimpleAddition()" do
     it "足し算を計算できること" do
-      five = Money.dollar(5)
+      five : Money = Money.dollar(5)
       sum : Expression = five.plus(five)
-      bank = Bank.new
-      reduced = bank.reduce(sum, "USD")
+      bank : Bank = Bank.new
+      reduced : Money = bank.reduce(sum, "USD")
       reduced.should eq Money.dollar(10)
     end
   end
@@ -45,14 +45,14 @@ describe MoneyPackage do
     it "Sumをreduceに渡すと足されて換算されること" do
       sum : Expression = Sum.new(Money.dollar(3), Money.dollar(4))
       bank = Bank.new
-      result = bank.reduce(sum, "USD")
+      result : Money = bank.reduce(sum, "USD")
       result.should eq Money.dollar(7)
     end
   end
   describe "testReduceMoney()" do
-    it "BankのreduceメソッドにMoneyを渡した場合は" do
+    it "BankのreduceメソッドにMoneyを渡した場合い指定通貨に換算できること" do
       bank = Bank.new
-      result = bank.reduce(Money.dollar(1), "USD")
+      result : Money = bank.reduce(Money.dollar(1), "USD")
       result.should eq Money.dollar(1)
     end
   end
