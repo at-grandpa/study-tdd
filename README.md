@@ -22,3 +22,4 @@
   * [第12章 設計とメタファー](https://github.com/at-grandpa/study-tdd/pull/16)
   * [第13章 実装を導くテスト](https://github.com/at-grandpa/study-tdd/pull/17)
   * [第14章 学習用テストと回帰テスト](https://github.com/at-grandpa/study-tdd/pull/18)
+  * [第15章 テスト任せとコンパイラ任せ](https://github.com/at-grandpa/study-tdd/pull/19)
