@@ -7,11 +7,11 @@ module MoneyPackage
     def initialize(@amount : Int32, @currency : String)
     end
 
-    def times(multiplier : Int32) : Money
+    def times(multiplier : Int32) : Expression
       Money.new(@amount * multiplier, @currency)
     end
 
-    def plus(addend : Money) : Expression
+    def plus(addend : Expression) : Expression
       Sum.new(self, addend)
     end
 
