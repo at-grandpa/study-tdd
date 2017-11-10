@@ -71,7 +71,7 @@ describe MoneyPackage do
   end
   describe "testMixedAddition()" do
     it "異なる通貨の足し算ができること" do
-      fiveBucks : Money = Money.dollar(5)
+      fiveBucks : Expression = Money.dollar(5)
       tenFrancs : Expression = Money.franc(10)
       bank : Bank = Bank.new
       bank.addRate("CHF", "USD", 2)
