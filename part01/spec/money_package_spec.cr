@@ -64,4 +64,9 @@ describe MoneyPackage do
       result.should eq Money.dollar(1)
     end
   end
+  describe "testArrayEquals()" do
+    it "Arrayの等価比較ができること" do
+      Array(String).new(1, "abc").should eq Array(String).new(1, "abc")
+    end
+  end
 end
