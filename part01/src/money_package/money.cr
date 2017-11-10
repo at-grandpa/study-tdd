@@ -16,7 +16,7 @@ module MoneyPackage
     end
 
     def reduce(bank : Bank, to : String) : Money
-      rate : Int32 = (@currency == "CHF" && to == "USD") ? 2 : 1
+      rate : Int32 = bank.rate(@currency, to)
       Money.new(@amount / rate, to)
     end
 
