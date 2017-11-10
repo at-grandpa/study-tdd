@@ -23,6 +23,10 @@ module MoneyPackage
       Sum.new(self, addend)
     end
 
+    def reduce(to : String) : self
+      self
+    end
+
     def self.dollar(amount : Int32) : self
       Money.new(amount, "USD")
     end
