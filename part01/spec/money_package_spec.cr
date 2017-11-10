@@ -56,4 +56,12 @@ describe MoneyPackage do
       result.should eq Money.dollar(1)
     end
   end
+  describe "testReduceMoneyDifferentCurrency()" do
+    it "異なる通貨を計算して変換できること" do
+      bank : Bank = Bank.new
+      bank.addRate("CHF", "USD", 2)
+      result : Money = bank.reduce(Money.franc(2), "USD")
+      result.should eq Money.dollar(1)
+    end
+  end
 end
