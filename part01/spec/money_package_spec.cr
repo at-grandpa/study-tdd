@@ -42,7 +42,7 @@ describe MoneyPackage do
     end
   end
   describe "testReduceSum()" do
-    it "reduceメソッドのテスト" do
+    it "Sumをreduceに渡すと足されて換算されること" do
       sum : Expression = Sum.new(Money.dollar(3), Money.dollar(4))
       bank = Bank.new
       result = bank.reduce(sum, "USD")
