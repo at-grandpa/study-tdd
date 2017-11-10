@@ -32,4 +32,28 @@ describe MoneyPackage do
       reduced.should eq Money.dollar(10)
     end
   end
+  describe "testPlusReturnsSum()" do
+    it "pulsメソッドはSumクラスを返すこと" do
+      five = Money.dollar(5)
+      result : Expression = five.plus(five)
+      sum : Sum = result.as(Sum)
+      sum.augend.should eq five
+      sum.addend.should eq five
+    end
+  end
+  describe "testReduceSum()" do
+    it "Sumをreduceに渡すと足されて換算されること" do
+      sum : Expression = Sum.new(Money.dollar(3), Money.dollar(4))
+      bank = Bank.new
+      result = bank.reduce(sum, "USD")
+      result.should eq Money.dollar(7)
+    end
+  end
+  describe "testReduceMoney()" do
+    it "BankのreduceメソッドにMoneyを渡した場合は" do
+      bank = Bank.new
+      result = bank.reduce(Money.dollar(1), "USD")
+      result.should eq Money.dollar(1)
+    end
+  end
 end

@@ -20,7 +20,11 @@ module MoneyPackage
     end
 
     def plus(addend : self) : Expression
-      Money.new(@amount + addend.@amount, @currency)
+      Sum.new(self, addend)
+    end
+
+    def reduce(to : String) : self
+      self
     end
 
     def self.dollar(amount : Int32) : self
