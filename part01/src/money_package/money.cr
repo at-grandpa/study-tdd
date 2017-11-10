@@ -16,7 +16,8 @@ module MoneyPackage
     end
 
     def reduce(to : String) : Money
-      self
+      rate : Int32 = (@currency == "CHF" && to == "USD") ? 2 : 1
+      Money.new(@amount / rate, to)
     end
 
     def currency : String
