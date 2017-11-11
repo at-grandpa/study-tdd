@@ -79,4 +79,15 @@ describe MoneyPackage do
       result.should eq Money.dollar(10)
     end
   end
+  describe "testSumPlusMoney()" do
+    it "Sumクラスのplusメソッドで計算ができること" do
+      fiveBucks : Expression = Money.dollar(5)
+      tenFrancs : Expression = Money.franc(10)
+      bank : Bank = Bank.new
+      bank.addRate("CHF", "USD", 2)
+      sum : Expression = Sum.new(fiveBucks, tenFrancs).plus(fiveBucks)
+      result : Money = bank.reduce(sum, "USD")
+      result.should eq Money.dollar(15)
+    end
+  end
 end
