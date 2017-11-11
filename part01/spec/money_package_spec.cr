@@ -101,4 +101,10 @@ describe MoneyPackage do
       result.should eq Money.dollar(20)
     end
   end
+  describe "testPlusSameCurrencyReturnsMoney()" do
+    it "同じ通貨を足した場合にMoneyクラスを返すこと" do
+      sum : Expression = Money.dollar(1).plus(Money.dollar(1))
+      sum.class.should eq Money
+    end
+  end
 end
