@@ -11,6 +11,7 @@ module MoneyPackage
     end
 
     def plus(addned : Expression) : Expression
+      Sum.new(self, addend)
     end
 
     def reduce(bank : Bank, to : String) : Money
