@@ -90,4 +90,15 @@ describe MoneyPackage do
       result.should eq Money.dollar(15)
     end
   end
+  describe "testSumTimes()" do
+    it "Sumクラスのtimesメソッドで計算ができること" do
+      fiveBucks : Expression = Money.dollar(5)
+      tenFrancs : Expression = Money.franc(10)
+      bank : Bank = Bank.new
+      bank.addRate("CHF", "USD", 2)
+      sum : Expression = Sum.new(fiveBucks, tenFrancs).times(2)
+      result : Money = bank.reduce(sum, "USD")
+      result.should eq Money.dollar(20)
+    end
+  end
 end
