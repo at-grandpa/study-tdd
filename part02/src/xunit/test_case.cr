@@ -17,6 +17,7 @@ class TestCase
       end
     {% end %}
     teardown
+    TestResult.new
   end
 
   def teardown

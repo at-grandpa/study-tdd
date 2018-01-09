@@ -11,6 +11,13 @@ class TestCaseTest < TestCase
     @test.run
     @test.log.should eq "setUp testMethod tearDown "
   end
+
+  def test_result
+    @test = WasRun.new("test_method")
+    result = @test.run
+    result.summary.should eq "1 run, 0 failed"
+  end
 end
 
 TestCaseTest.new("test_template_method").run
+TestCaseTest.new("test_result").run
