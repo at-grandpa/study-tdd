@@ -5,7 +5,15 @@ class WasRun
   end
 
   def run
-    test_method
+    {% begin %}
+      case @name
+        {% for method, index in @type.methods.map(&.name) %}
+          when {{method.stringify}} then {{method.id}}
+        {% end %}
+      else
+        raise "Undefined method. You specified: #{@name}"
+      end
+    {% end %}
   end
 
   def test_method
