@@ -4,17 +4,20 @@ require "spec/methods"
 require "spec/dsl"
 
 class TestCaseTest < TestCase
+  @test : WasRun = WasRun.new("")
+
+  def setup
+    @test = WasRun.new("test_method")
+  end
+
   def test_running
-    test = WasRun.new("test_method")
-    test.run
-    test.was_run.should eq true
+    @test.run
+    @test.was_run.should eq true
   end
 
   def test_setup
-    # runをしたらsetupが呼ばれていることを検証している
-    test = WasRun.new("test_method")
-    test.run
-    test.was_setup.should eq true
+    @test.run
+    @test.was_setup.should eq true
   end
 end
 
