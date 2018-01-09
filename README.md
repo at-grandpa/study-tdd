@@ -26,3 +26,5 @@
   * [第16章 将来の読み手を考えたテスト](https://github.com/at-grandpa/study-tdd/pull/20)
   * [第17章 多国通貨の全体ふりかえり](https://github.com/at-grandpa/study-tdd/pull/21)
   * [第Ⅰ部 個人的な感想](https://github.com/at-grandpa/study-tdd/issues/22)
+* 第Ⅱ部 xUnit
+  * [第18章 xUnit へ向かう小さな一歩](https://github.com/at-grandpa/study-tdd/pull/23)
