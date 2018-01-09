@@ -16,5 +16,9 @@ class TestCase
         raise "Undefined method. You specified: #{@name}"
       end
     {% end %}
+    teardown
+  end
+
+  def teardown
   end
 end
