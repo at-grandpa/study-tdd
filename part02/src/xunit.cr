@@ -9,7 +9,7 @@ class TestCaseTest < TestCase
   def test_template_method
     @test = WasRun.new("test_method")
     @test.run
-    @test.log.should eq "setUp testMethod tearDown"
+    @test.log.should eq "setUp testMethod tearDown "
   end
 end
 
