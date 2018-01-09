@@ -1,0 +1,13 @@
+name: xunit
+version: 0.1.0
+
+authors:
+  - yoshiyuki-tsuchida <yoshiyuki_tsuchida@voyagegroup.com>
+
+targets:
+  xunit:
+    main: src/xunit.cr
+
+crystal: 0.24.1
+
+license: MIT
