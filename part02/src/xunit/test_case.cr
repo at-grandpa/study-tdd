@@ -6,6 +6,8 @@ class TestCase
   end
 
   def run
+    result = TestResult.new
+    result.test_started
     setup
     {% begin %}
       case @name
@@ -17,7 +19,7 @@ class TestCase
       end
     {% end %}
     teardown
-    TestResult.new
+    result
   end
 
   def teardown
