@@ -8,5 +8,6 @@ class WasRun < TestCase
 
   def test_method
     @was_run = true
+    @log += "testMethod "
   end
 end

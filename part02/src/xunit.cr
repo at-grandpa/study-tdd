@@ -17,7 +17,7 @@ class TestCaseTest < TestCase
 
   def test_setup
     @test.run
-    @test.log.should eq "setUp "
+    @test.log.should eq "setUp testMethod "
   end
 end
 
