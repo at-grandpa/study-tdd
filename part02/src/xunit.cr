@@ -6,11 +6,8 @@ require "spec/dsl"
 class TestCaseTest < TestCase
   @test : WasRun = WasRun.new("")
 
-  def setup
-    @test = WasRun.new("test_method")
-  end
-
   def test_template_method
+    @test = WasRun.new("test_method")
     @test.run
     @test.log.should eq "setUp testMethod "
   end
