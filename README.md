@@ -30,3 +30,4 @@
   * [第18章 xUnit へ向かう小さな一歩](https://github.com/at-grandpa/study-tdd/pull/23)
   * [第19章 前準備](https://github.com/at-grandpa/study-tdd/pull/24)
   * [第20章 後片付け](https://github.com/at-grandpa/study-tdd/pull/25)
+  * [第21章 数え上げ](https://github.com/at-grandpa/study-tdd/pull/26)
