@@ -2,7 +2,11 @@ class TestCase
   def initialize(@name : String)
   end
 
+  def setup
+  end
+
   def run
+    setup
     {% begin %}
       case @name
         {% for method, index in @type.methods.map(&.name) %}
