@@ -4,6 +4,10 @@ class WasRun
   def initialize(@name : String)
   end
 
+  def run
+    test_method
+  end
+
   def test_method
     @was_run = true
   end
