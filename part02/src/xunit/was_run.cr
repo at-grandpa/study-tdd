@@ -9,6 +9,10 @@ class WasRun < TestCase
     @log += "testMethod "
   end
 
+  def test_broken_method
+    raise Exception.new
+  end
+
   def teardown
     @log += "tearDown "
   end
