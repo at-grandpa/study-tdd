@@ -33,4 +33,4 @@
   * [第21章 数え上げ](https://github.com/at-grandpa/study-tdd/pull/26)
   * [第22章 失敗の扱い](https://github.com/at-grandpa/study-tdd/pull/27)
   * [第23章 スイートにまとめる](https://github.com/at-grandpa/study-tdd/pull/28)
-  * [第24章 xUnitの全体振り返り](https://github.com/at-grandpa/study-tdd/pull/29)
+  * [第24章 xUnitの全体ふりかえり](https://github.com/at-grandpa/study-tdd/pull/29)
