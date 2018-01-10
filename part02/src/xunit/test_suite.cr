@@ -1,5 +1,5 @@
 class TestSuite
-  @tests : Array(WasRun) = [] of WasRun
+  @tests : Array(TestCase) = [] of TestCase
 
   def add(test)
     @tests << test
