@@ -35,7 +35,8 @@ class TestCaseTest < TestCase
     suite = TestSuite.new
     suite.add(WasRun.new("test_method"))
     suite.add(WasRun.new("test_broken_method"))
-    result = suite.run
+    result = TestResult.new
+    suite.run(result)
     result.summary.should eq "2 run, 1 failed"
   end
 end
