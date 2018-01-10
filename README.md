@@ -34,3 +34,4 @@
   * [第22章 失敗の扱い](https://github.com/at-grandpa/study-tdd/pull/27)
   * [第23章 スイートにまとめる](https://github.com/at-grandpa/study-tdd/pull/28)
   * [第24章 xUnitの全体ふりかえり](https://github.com/at-grandpa/study-tdd/pull/29)
+  * [第Ⅱ部 個人的な感想](https://github.com/at-grandpa/study-tdd/issues/30)
