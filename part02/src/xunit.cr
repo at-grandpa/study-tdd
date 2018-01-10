@@ -8,19 +8,22 @@ class TestCaseTest < TestCase
 
   def test_template_method
     @test = WasRun.new("test_method")
-    @test.run
+    result = TestResult.new
+    @test.run(result)
     @test.log.should eq "setUp testMethod tearDown "
   end
 
   def test_result
     @test = WasRun.new("test_method")
-    result = @test.run
+    result = TestResult.new
+    @test.run(result)
     result.summary.should eq "1 run, 0 failed"
   end
 
   def test_failed_result
     @test = WasRun.new("test_broken_method")
-    result = @test.run
+    result = TestResult.new
+    @test.run(result)
     result.summary.should eq "1 run, 1 failed"
   end
 
