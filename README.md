@@ -45,4 +45,5 @@
   * [第31章 リファクタリング ](https://github.com/at-grandpa/study-tdd/issues/37)
   * [第32章 TDDを身につける ](https://github.com/at-grandpa/study-tdd/issues/38)
   * [第Ⅲ部 個人的な感想](https://github.com/at-grandpa/study-tdd/issues/39)
-* [付録C 個人的な感想](https://github.com/at-grandpa/study-tdd/issues/40)
+* 付録
+  * [付録C 個人的な感想](https://github.com/at-grandpa/study-tdd/issues/40)
