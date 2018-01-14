@@ -47,3 +47,5 @@
   * [第Ⅲ部 個人的な感想](https://github.com/at-grandpa/study-tdd/issues/39)
 * 付録
   * [付録C 個人的な感想](https://github.com/at-grandpa/study-tdd/issues/40)
+* 今後
+  * [疑問と今後](https://github.com/at-grandpa/study-tdd/issues/41)
